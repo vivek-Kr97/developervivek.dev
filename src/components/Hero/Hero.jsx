@@ -3,19 +3,28 @@ import Navbar from './Navbar';
 import bg from '../../assets/bg.png';
 
 
-
 const Hero = ({ isOpen, setIsopen }) => {
   return (
-    <section className='bg-[#121212] h-[100vh] text-white w-full'>
+    <section className='bg-[#121212] h-[100vh] text-white w-full z-10'
+    
+     >
      
       <Navbar/>
+    
+
+     
+
+  
       <section className='opacity-0 animate-fadeInUp'>
-          
-    <div className='container lg:grid lg:grid-cols-[50%_auto]  justify-center items-center lg:justify-evenly h-[89vh] flex flex-col'>
-
-
+ 
       
+          
+    <div className='container lg:grid lg:grid-cols-[50%_auto]  justify-center items-center lg:justify-evenly h-[89vh] flex flex-col'
+  >
 
+
+
+    
           {/* content  */}
               <div className='order-1 text-center lg:text-start'>
 
@@ -45,7 +54,7 @@ const Hero = ({ isOpen, setIsopen }) => {
                 transition-all duration-300 hover:shadow-[0_0_25px_#00f0ff] hover:shadow-cyan-400
                 h-[200px]'/>
             </div>
-
+          
 
 
 

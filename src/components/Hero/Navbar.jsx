@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLists } from './NavLists'
 import ResponsiveMenu from './ResponsiveMenu';
 import { useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
 import { CgClose } from 'react-icons/cg';
-import SharePortfolio from '../Contact/SharePortfolio';
+
 
 
 
 const Navbar = () => {
-  
     const [isOpen, setIsopen] = useState(false);
+    useEffect(() => {
+      document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    }, [isOpen]);
   return (
-    <nav className='bg-[#121212] sticky top-0 z-50'>
+    <nav className='bg-[#121212] sticky top-0 z-50 '>
       <div className='
          flex lg:justify-evenly justify-between items-center py-3 text-yellow-500 mx-4'
          
@@ -57,6 +59,8 @@ const Navbar = () => {
             {isOpen ? <CgClose /> : <IoMenu />}
           </div>
       </div>
+
+     
       {/* Responsive SideBar  */}
       <ResponsiveMenu isOpen ={isOpen} setIsopen={setIsopen}/>
       <div className='h-0.5 bg-yellow-500'></div>

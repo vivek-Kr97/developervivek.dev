@@ -66,8 +66,10 @@ const Services = () => {
             viewport={{ once: true }}
             className="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-xl s transition-shadow duration-300"
           >
-            <div className="mb-4">{service.icon}</div>
-            <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+           <div className="flex gap-x-5">
+           <div className="mb-4">{service.icon}</div>
+           <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+           </div>
             <p className="text-gray-500 text-sm">{service.desc}</p>
           </motion.div>
         ))}

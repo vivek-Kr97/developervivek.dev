@@ -27,7 +27,7 @@ const Hero = ({ isOpen, setIsopen }) => {
                 </p>
 
                 <a 
-                href="/public/Vivek_portfolio.pdf"
+                href="/Vivek_portfolio.pdf"
                 download
                 className='bg-yellow-500 text-white py-1 mx-auto font-bold px-3 mt-12 rounded-sm lg:hidden block
                 hover:text-yellow-500 hover:bg-white w-48 text-[14px] hover:shadow-[0_0_12px_#FFEB3B]'>

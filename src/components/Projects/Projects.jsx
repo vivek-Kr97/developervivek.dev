@@ -9,8 +9,6 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   
-  
-
   useEffect(() => {
     fetch("https://api.github.com/users/vivek-Kr97/repos")
       .then((response) => response.json())
@@ -33,7 +31,10 @@ const Projects = () => {
           }
         });
 
-        Promise.all(fetchReadmes).then((projectsWithPreview) => setProjects(projectsWithPreview));
+        Promise.all(fetchReadmes).then((projectsWithPreview) => 
+          setProjects(projectsWithPreview));
+          setProjects(finalProjects);
+        
       })
       .catch((error) => console.error("Error fetching repos:", error));
   }, []);

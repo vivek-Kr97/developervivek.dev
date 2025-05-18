@@ -2,6 +2,7 @@ import React from 'react'
 import certificate1 from './react.png'
 import certificate2 from './htmlcsjs.jpg'
 import certificate3 from './JS bootcamp.jpg';
+import nodepic from './LUENJSAPR125817_page-0001.jpg'
 
 const Certification  = () => {
   const links = [
@@ -23,6 +24,13 @@ const Certification  = () => {
       org:"Data-flair" ,
       img: certificate2,
     },
+       {
+      add: " https://verify.letsupgrade.in/certificate/LUENJSAPR125817", 
+      name:"Node.js Bootcamp" ,
+      org:"letsupgrade" ,
+      img: nodepic,
+    },
+    
     
   ];
   return (

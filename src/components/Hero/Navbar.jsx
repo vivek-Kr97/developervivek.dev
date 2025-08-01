@@ -32,7 +32,7 @@ const Navbar = () => {
                 NavLists.map((items) => {
                     return(
                         <li key={items.key}
-                        className='hover:font-bold text-xs hover:text-white transition-all duration-300'>
+                        className='font-semibold text-xs hover:text-white transition-all duration-300'>
                             <a href={items.link}>
                                 {items.title}
                             </a>
